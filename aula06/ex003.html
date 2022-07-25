@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        .container{
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            box-shadow: 1px 1px 5px black;
+            background-color: lightblue;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+        } 
+        p{
+            color: rgb(6, 150, 155);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Olá, Mundo!</h1>
+        <p>Já me livrei da maldição</p>
+    </div>
+
+    <script>
+        // alert('Minha Primeira Mensagem')
+        // confirm('Esta Gostando de JavaScript?')
+        // var nome = prompt('Qual é seu nome?')
+        // alert ('É um grande prazer em te conhecer, ' + nome)
+        var n1 = Number(prompt('Digite um numero: '))
+        var n2 = Number(prompt('Digite outro numero: '))
+        var soma = n1 + n2
+        alert(`O resultado da soma de ${n1} e ${n2} é ${soma}`)
+    </script>
+
+</body>
+</html>
