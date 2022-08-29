@@ -17,7 +17,7 @@
 }
 
 body{
-    font: 1em Arial, Helvetica, sans-serif;
+    font: 1.2em Arial, Helvetica, sans-serif;
     height: 100vh;
     background: var(--cor3);
     display: flex;
@@ -38,12 +38,16 @@ header{
 }
 
 section{
-
+    padding: 30px;
     width: 600px;
     height: 80vh;
     border-radius:  0 0 10px 10px;
     background: var(--cor5);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.297);
+}
+
+#res{
+    margin: 10px;
 }
 
 footer{
