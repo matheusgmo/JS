@@ -3,58 +3,91 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-html, body{
-    width: 100vw;
+body{
+    font: 1em Arial, Helvetica, sans-serif;
     height: 100vh;
-}
-
-header{
-    width: 60px;
-    height: 100%;
-    background-color: rgb(90, 111, 110);
-    padding: 10px 10px 10px 22px;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url(5297135.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #menu{
-    width: 40px;
-    height: 37px;
-    /* background-color: tomato; */
+    width: 90px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.08);
+    transition: .3s;
+    overflow: hidden;
+}
+
+#iconeMenu{
+    width: 90px;
+    height: 60px;
+    padding: 10px 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-}
-
-#menu div{
-    position: relative;
-    width: 100%;
-    height: 20%;
-    border-radius: 10px;
-    transition: .5s;
-    background-color: black;
-}
-
-#checkbox{
-    position: absolute;
-    width: 40px;
-    height: 37px;
-    z-index:1000;
-    opacity: 0;
     cursor: pointer;
+    transition: .3s;
+    
 }
 
-.check #barra1{
-    transform: rotateZ(45deg);
-    transform-origin: bottom left;
+#iconeMenu div{
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: rgb(44, 44, 44);
+    transition: .3s;
 }
 
-.check #barra2{
-    transform: scalex(0);
+#barra1.active{
+    transform: rotate(45deg) translateY(25px);
 }
 
-.check #barra3{
-    transform: rotateZ(-45deg);
-    transform-origin: top left;
+#barra2.active{
+    width: 0;
+}
+
+#barra3.active{
+    transform: rotate(-45deg) translateY(-25px);
+
+}
+
+#iconeMenu.active{
+    transform: translateX(140px);
+}
+
+#menu.active{
+    width: 200px;
+}
+
+#menu.active .itens{
+    display: block;
+}
+
+#itens{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#itens div{
+    width: 100%;
+    height: 40px;
+    padding: 10px 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+    display: none;
+}
+
+
+.itens:hover{
+    background-color: rgba(0, 0, 0, 0.178);
 }
