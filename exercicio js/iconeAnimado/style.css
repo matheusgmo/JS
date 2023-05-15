@@ -47,21 +47,21 @@ body{
     transition: .3s;
 }
 
-#barra1.active{
+#iconeMenu.active{
+    transform: translateX(140px);
+}
+
+#iconeMenu.active #barra1{
     transform: rotate(45deg) translateY(25px);
 }
 
-#barra2.active{
+#iconeMenu.active #barra2{
     width: 0;
 }
 
-#barra3.active{
+#iconeMenu.active #barra3{
     transform: rotate(-45deg) translateY(-25px);
 
-}
-
-#iconeMenu.active{
-    transform: translateX(140px);
 }
 
 #menu.active{
